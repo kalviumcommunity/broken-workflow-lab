@@ -1,3 +1,5 @@
 # Deployment Utility Documentation
 
-A small deployment assistant used by the operations team.
+A simple deployment assistant with a lightweight shell-based flow.
+
+Backup is currently handled by scripts/backup-utils.sh.
