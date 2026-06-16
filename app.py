@@ -1,6 +1,11 @@
 #!/usr/bin/env python3
 import os
 
+from src.helper import deploy_summary
+
 if __name__ == '__main__':
-    env = os.getenv('DEPLOY_ENV', 'production')
-    print({'service': 'deployment-agent', 'environment': env, 'status': 'failed'})
+    environment = os.getenv('DEPLOY_ENV', 'staging')
+    print({'service': 'deployment-api', 'env': environment, 'status': 'ok'})
+
+
+
